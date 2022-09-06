@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Run Trivy vulnerability svanner in IaC mode
+      - name: Run Trivy vulnerability scanner in IaC mode
         uses: aquasecurity/trivy-action@master
       - name: Login to DockerHub
         uses: docker/login-action@v2
